@@ -1,7 +1,7 @@
 {
   "build": {
     "beforeBuildCommand": "npm run build",
-    "beforeDevCommand": "npm run dev",
+    "beforeDevCommand": "npm run start",
     "devPath": "http://localhost:3000",
     "distDir": "../build"
   },
@@ -54,11 +54,13 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "height": 600,
-        "resizable": true,
-        "title": "rusty-status-bar",
-        "width": 800
+	   "title": "rusty-status-bar",
+	   "width": 800,
+       "height": 50,
+       "resizable": false,
+       "decorations": false,
+       "transparent": true,
+       "alwaysOnTop": true
       }
     ]
   }
